@@ -105,7 +105,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
             pointToLayer: function(feature, latLng){
                 return L.circleMarker(latLng);
             },
-            // set style for each market
+            // set style for each marker
             style: dataStyle, // calls dataStyle function and passes in quake data
             // add popups
             onEachFeature: function(feature, layer){
@@ -126,7 +126,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
 
                 // Bind the popup with the formatted date
                 layer.bindPopup(`Magnitude: <b>${feature.properties.mag}</b><br>
-                                Depth: <b>${feature.geometry.coordinates[2]}</b><br>
+                                Depth, km: <b>${feature.geometry.coordinates[2]}</b><br>
                                 Location: <b>${feature.properties.place}</b><br>
                                 Date: <b>${formattedDate}</b><br>
                                 Time: <b>${formattedTime}</b>`);
