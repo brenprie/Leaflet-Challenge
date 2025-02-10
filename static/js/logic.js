@@ -43,6 +43,7 @@ var USGS_USImageryTopo = L.tileLayer('https://basemap.nationalmap.gov/arcgis/res
 let basemaps = {
     "ESRI World Street Map": Esri_WorldStreetMap,
     "ESRI World Physical Map": Esri_WorldPhysical,
+    "Esri National Geographic World Map": Esri_NatGeoWorldMap,
     "USGS USImagery Topo Map": USGS_USImageryTopo
 };
 
