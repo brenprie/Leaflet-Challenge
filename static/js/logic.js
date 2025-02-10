@@ -45,14 +45,14 @@ let basemaps = {
     "ESRI World Physical Map": Esri_WorldPhysical,
     "Stadia Greyscale": stadiaGreyscaleMap,
     "Stadia Greyscale Dark": stadiaGreyscaleDark,
-    "Stadia Satellite Map": stadiaSatelliteMap,
+    "Stadia Satellite Map": stadiaSatelliteMap
 };
 
 // Create map object, specifying center, initial zoom level, and base layer options (last layer listed is loaded by default)
 let map = L.map("map", {
     center: [40.7, -94.5],
     zoom: 4,
-    layers: [Esri_WorldStreetMap, Esri_WorldPhysical, stadiaGreyscaleMap, stadiaGreyscaleDark, stadiaSatelliteMap],
+    layers: [Esri_WorldStreetMap]
 });
 
 /* Alt formulation, if were to hardcode a single basemap; first create map object, then:
