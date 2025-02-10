@@ -161,7 +161,7 @@ legend.onAdd = function(){
     div.innerHTML =`
         <h3>All Earthquakes, Past 7 Days</h3>
         <hr style="margin: 5px 0; border: none; border-top: 1px solid black;">
-        <h3>Earthquake Magnitudes</h3>`;
+        <h3>Earthquake Depths</h3>`;
 
     // Set up intervals
     let intervals = [-10, 10, 30, 50, 70, 90];
