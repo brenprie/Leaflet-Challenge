@@ -42,7 +42,8 @@ var USGS_USImageryTopo = L.tileLayer('https://basemap.nationalmap.gov/arcgis/res
 // Create basemaps object (this will be passed into toggle control below)
 let basemaps = {
     "ESRI World Street Map": Esri_WorldStreetMap,
-    "ESRI World Physical Map": Esri_WorldPhysical
+    "ESRI World Physical Map": Esri_WorldPhysical,
+    "USGS USImagery Topo Map": USGS_USImageryTopo
 };
 
 // Create map object, specifying center, initial zoom level, and base layer options (last layer listed is loaded by default)
