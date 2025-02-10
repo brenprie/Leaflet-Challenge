@@ -47,7 +47,7 @@ let basemaps = {
     "USGS USImagery Topo Map": USGS_USImageryTopo
 };
 
-// Create map object, specifying center, initial zoom level, and base layer options (last layer listed is loaded by default)
+// Create map object, specifying center, initial zoom level, and default base layer
 let map = L.map("map", {
     center: [40.7, -94.5],
     zoom: 4,
